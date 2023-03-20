@@ -32,8 +32,7 @@ tz = pytz.timezone('Europe/Madrid')
 time_now = datetime.now(tz)
 
 # Print the current time
-
-time_now = datetime.now()
+print(time_now)
 LAT_MADRID = 40.24
 LNG_MADRID = 3.43
 parameters = {
@@ -146,6 +145,4 @@ plt.xticks(np.arange(-180,180,30),fontsize=10)
 plt.yticks(np.arange(-90,90,30),fontsize=10)
 plt.show()
 
-print("hello dear friend")
-print("bye my friend")
 
