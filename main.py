@@ -145,4 +145,5 @@ plt.xticks(np.arange(-180,180,30),fontsize=10)
 plt.yticks(np.arange(-90,90,30),fontsize=10)
 plt.show()
 
+print("End")
 
