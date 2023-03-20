@@ -22,6 +22,17 @@ position = (latitude,longitude)
 
 
 #Data from Time
+import pytz
+from datetime import datetime
+
+# Set the timezone to US/Eastern
+tz = pytz.timezone('Europe/Madrid')
+
+# Get the current time in the specified timezone
+time_now = datetime.now(tz)
+
+# Print the current time
+
 time_now = datetime.now()
 LAT_MADRID = 40.24
 LNG_MADRID = 3.43
@@ -51,6 +62,7 @@ data_dict = {
     "longitude": longitude,
 }
 print(data_dict)
+
 #Data processing
 
 data_frame_dirty = pandas.DataFrame((data_dict), index=[0])
@@ -134,4 +146,6 @@ plt.xticks(np.arange(-180,180,30),fontsize=10)
 plt.yticks(np.arange(-90,90,30),fontsize=10)
 plt.show()
 
+print("hello")
+print("bye my friend")
 
